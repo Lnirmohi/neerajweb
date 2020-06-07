@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Oxygen', sans-serif;
+	letter-spacing: 1px;
+	box-sizing: border-box;
+}
+section{
+	width: 100%;
+	height: 100vh;
+	background: url(../images/cup.jpg);
+	background-size: cover;
+
+}
+.mob-icon{display: none;}
+
+.main-nav{
+
+	list-style: none;
+	float: right;
+	margin-top: 20px;
+	padding-right: 120px;
+
+}
+.main-nav li{
+	
+	display: inline-block;
+	margin-left: 32px;
+	
+	
+}
+.main-nav li a{
+	/* display: inline-block; */
+	padding: 6px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 70%;
+
+}
+.main-nav li a:hover{
+
+	/* border-bottom: .1px solid white; */
+	background:grey;
+	border-radius: 5px;
+
+}
+
+.container
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 700px;
+	height: 350px;
+	background: rgba(60, 54, 70, 0.7);
+
+}
+.container .abt, .container .signin{
+	position: relative;
+	width: 50%;
+	height: 350px;
+	float: left;
+	box-sizing: border-box;
+}
+
+.container .abt{
+
+	padding: 30px 40px;
+	color: #fff;
+}
+.container .abt a{
+display: inline-block;
+padding: 10px 20px;
+color: #fff;
+background: #d486a1;
+border-radius: 25px;
+text-decoration: none;
+box-shadow: 0px 10px 20px rgba( 0,0,0,.3)
+
+}
+.container .abt a:hover{
+	background: pink;
+}
+.container .signin{
+	background: #fff;
+	height: 380px;
+	top: -15px;
+	box-shadow: -30px 0px 15px rgba(0,0,0,.2);
+	padding: 30px;
+}
+.container .signin h1{
+	color: black;
+	}
+.container .signin a{
+	/* text-decoration: none; */
+	margin-top: 20px;
+	float: right;
+	font-size: small;
+}
+.container .signin a:hover
+{
+	color: red;
+	border-bottom: 10px;
+}
+.container .signin input{
+display: block;
+width: 100%;
+padding: 10px;
+box-sizing: border-box;
+margin-bottom: 10px;
+border: 2px solid #ccc;
+border-radius: 15px;
+outline: none;
+
+}
+.container .signin input:hover,
+.container .signin input:valid
+{
+border: 2px solid #92b5d6;
+}
+.container .signin input[type="submit"]{
+	color: #fff;
+	background: #92b5d6;
+	font-size: small;
+	transition: .5s;
+	outline: none;
+} 
+.container .signin input[type="submit"]:hover
+{
+background: #ff0057;
+border : 2px solid #ff0057;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ???????????????????????????media query??????????????? */
+
+
+@media only screen and (max-width: 1185px){
+	.main-nav  {
+		font-size: 90%;
+		width:80%;
+		padding-left: 60px;
+		margin-left:10%;
+	}
+	@media only screen and (max-width: 817px){
+		.main-nav{display: none;}
+
+		.mob-icon{ display:inline-block; 
+			color: white;
+			float: right;
+			margin: 20px;
+			margin-bottom: 20px;
+			padding: 10px;}
+			.main-nav{float:left;
+				display: block;}
+				#down{
+					width: 50%;}}
+@media only screen and (max-width: 767px){
+		.main-nav{display: none;}
+		.mob-icon{ display:inline ; 
+			color: white;
+			float: right;
+							/* margin: px; */
+		margin-bottom: 20px;
+			padding: 10px;}
+				.main-nav{float:left;
+			display: block;}
+			#down{
+			width: 20%;}
+			}
+@media (max-width: 718px){
+
+	.container{display:block;
+		font-size: 80%;
+		width: 95%;
+		margin-left: 10px;}
+}

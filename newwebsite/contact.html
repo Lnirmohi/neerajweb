@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+ 		<div class="row clearfix">
+				<!-- 	<img src="images/LOGO.png " class="logo"> -->
+				<ul id="down" class="main-nav">
+					<li><a href="./index.html">HOME</a></li>
+					
+					<li><a href="./signin.html">SIGNUP</a></li>
+					<li><a href="./contact.html">CONTACT</a></li>
+				</ul>
+				<div><br>
+
+
+					<a href="#" class="mob-icon" onclick="slideshow()"> <i class="fas fa-bars"></i></a></div>
+				</div>	
+			<script type="text/javascript">
+			function slideshow() {
+				var x =document.getElementById('down');
+				if(x.style.display === "none"){
+					x.style.display="block";
+				}
+				else{
+					x.style.display="none";
+				}
+			}
+		</script>
+
+
+
+	<div class="container">
+		<div class="circle"></div>
+		<h1> NEERAJ SHUKLA</h1> <hr><h2> WEB-DEVELOPER</h2>
+		<p>Junior Web developer able to buid a Web presence from the ground up: from concept, navigation, layout and programming to UX and basic SEO. Skilled at writing well-designed, testable and efficient code using current best practices in Web development.
+		Fast learner hard worker and team player who is ready to utilize his skills to uplift your organization and become a part of your success.</p>
+
+	</div><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="form-container">  
+  <form id="contact" action="" method="post">
+    <h3> Contact Form</h3>
+    <h4>Contact us for any help</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Web Site (optional)" type="url" tabindex="4" >
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+   
+  </form>
+</div>
+</body>
+</html>
+
